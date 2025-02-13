@@ -39,14 +39,16 @@ export default function Home() {
       <Testimonial
         id="testimonial-from-gerardo-stark"
         author={{
-          name: 'Gerardo Stark',
-          role: 'Creator of Pandemicons',
+          name: 'Gerardo Rodriguez',
+          role: 'Coordinador Logistico',
           image: avatarImage2,
         }}
       >
         <p>
-          “I’ve tried to create my own icons in the past but quickly got
-          frustrated and gave up. Now I sell my own custom icon sets online.”
+          “Había intentado manejar el mantenimiento por mi cuenta, pero siempre
+          surgían problemas. Desde que contamos con los servicios de Colombia
+          Limpia, todo funciona de manera más eficiente y sin contratiempos. Su
+          profesionalismo ha hecho una gran diferencia en nuestro entorno.”
         </p>
       </Testimonial>
       <Resources />

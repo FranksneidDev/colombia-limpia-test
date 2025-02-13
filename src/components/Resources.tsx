@@ -2,55 +2,69 @@ import Image from 'next/image'
 
 import { Container } from '@/components/Container'
 import { SectionHeading } from '@/components/SectionHeading'
-import abstractBackgroundImage from '@/images/resources/abstract-background.png'
-import discordImage from '@/images/resources/discord.svg'
-import figmaImage from '@/images/resources/figma.svg'
-import videoPlayerImage from '@/images/resources/video-player.svg'
+import image1 from '@/images/selection/image0.jpeg'
+import image2 from '@/images/selection/image2.jpeg'
+import image3 from '@/images/selection/image3.jpeg'
 
 const resources = [
   {
-    title: 'Figma icon templates',
+    title: 'Evaluación y selección rigurosa',
     description:
-      'Perfectly structured templates for quickly designing new icons at dozens of common sizes.',
+      'En Colombia Limpia, ' +
+        'cada candidato pasa por un proceso de selección detallado, ' +
+        'incluyendo entrevistas,' +
+        ' pruebas psicológicas y verificación de referencias para garantizar personal confiable y calificado.',
     image: function FigmaImage() {
       return (
-        <div className="absolute inset-0 flex items-center justify-center bg-[radial-gradient(#2C313D_35%,#000)]">
-          <Image src={figmaImage} alt="" unoptimized />
+        <div className="absolute inset-0 flex items-center justify-center">
+          <Image
+            className="absolute inset-0 h-full w-full object-cover"
+            src={image1}
+            alt=""
+            sizes="(min-width: 1280px) 21rem, (min-width: 1024px) 33vw, (min-width: 768px) 19rem, (min-width: 640px) 50vw, 100vw"
+          />
         </div>
       )
     },
   },
   {
-    title: 'Weekly icon teardowns',
+    title: 'Compromiso con la excelencia',
     description:
-      'Weekly videos where we dissect and recreate beautiful icons we find on the web.',
+      'Seleccionamos profesionales con vocación de servicio, comprometidos con la limpieza, ' +
+        'el orden y el bienestar de cada espacio donde trabajamos.',
     image: function VideoPlayerImage() {
       return (
         <div className="absolute inset-0 flex items-center justify-center">
           <Image
             className="absolute inset-0 h-full w-full object-cover"
-            src={abstractBackgroundImage}
+            src={image2}
             alt=""
             sizes="(min-width: 1280px) 21rem, (min-width: 1024px) 33vw, (min-width: 768px) 19rem, (min-width: 640px) 50vw, 100vw"
           />
-          <Image
-            className="relative"
-            src={videoPlayerImage}
-            alt=""
-            unoptimized
-          />
+          {/*<Image*/}
+          {/*  className="relative"*/}
+          {/*  src={image3}*/}
+          {/*  alt=""*/}
+          {/*  unoptimized*/}
+          {/*/>*/}
         </div>
       )
     },
   },
   {
-    title: 'Community of icon designers',
+    title: 'Capacitación y formación continua',
     description:
-      "A private Discord server where you can get help and give feedback on each others' work.",
+      "Nuestro equipo recibe constante capacitación en normas de seguridad, técnicas de limpieza y protocolos especializados, " +
+        "asegurando un servicio eficiente y de alta calidad.",
     image: function DiscordImage() {
       return (
-        <div className="absolute inset-0 flex items-center justify-center bg-[#6366F1]">
-          <Image src={discordImage} alt="" unoptimized />
+        <div className="absolute inset-0 flex items-center justify-center">
+          <Image
+            src={image3}
+            alt=""
+            unoptimized
+            className="h-full w-full object-cover"
+          />
         </div>
       )
     },
@@ -66,16 +80,32 @@ export function Resources() {
     >
       <Container>
         <SectionHeading number="3" id="resources-title">
-          Resources
+          Procesos de seleccion
         </SectionHeading>
-        <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
-          Tools and resources you can use to get started even faster and
-          progress even further.
-        </p>
+        <h2 className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
+          Proceso de Selección Efectivo
+        </h2>
         <p className="mt-4 text-lg tracking-tight text-slate-700">
-          Design assets, icon teardowns, and a community of fellow icon
-          designers where you can ask questions, get feedback, and accelerate
-          your learning.
+          Colombia Limpia SAS se destaca por priorizar la contratación de
+          mujeres cabezas de hogar, promoviendo la inclusión y el desarrollo
+          social, mientras mantenemos un riguroso proceso de selección que
+          incluye:
+        </p>
+        <p className="mt-2 text-lg tracking-tight text-slate-700">
+          ▪ Reclutamiento: Identificamos y seleccionamos personal apto para
+          cumplir con los perfiles requeridos por nuestros clientes.
+        </p>
+        <p className="mt-2 text-lg tracking-tight text-slate-700">
+          ▪ Selección Integral: Definimos candidatos idóneos a través de
+          verificaciones exhaustivas, incluyendo:
+          <span className="block">✓ Exámenes médicos,</span>
+          <span className="block">✓ Visitas domiciliarias,</span>
+          <span className="block">✓ Entrevistas y pruebas psicológicas</span>
+        </p>
+        <p className="mt-2 text-lg tracking-tight text-slate-700">
+          • Contratación Segura: Legalizamos la relación laboral, asegurando la
+          afiliación a entidades de Seguridad Social y la firma del contrato de
+          trabajo.
         </p>
       </Container>
       <Container size="lg" className="mt-16">
@@ -88,7 +118,7 @@ export function Resources() {
               key={resource.title}
               className="grid auto-rows-min grid-cols-1 items-center gap-8 px-3 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-1 xl:px-12"
             >
-              <div className="relative h-48 overflow-hidden rounded-2xl shadow-lg sm:h-60 lg:h-40">
+              <div className="relative overflow-hidden rounded-2xl shadow-lg h-96">
                 <resource.image />
               </div>
               <div>
