@@ -23,14 +23,16 @@ export default function Home() {
       <Testimonial
         id="testimonial-from-tommy-stroman"
         author={{
-          name: 'Tommy Stroman',
-          role: 'Front-end developer',
+          name: 'Alex Stroman',
+          role: 'Gerente de operaciones',
           image: avatarImage1,
         }}
       >
         <p>
-          “I didn’t know a thing about icon design until I read this book. Now I
-          can create any icon I need in no time. Great resource!”
+          “No sabía nada sobre gestión de aseo y mantenimiento hasta que conocí
+          los servicios de Colombia Limpia. Ahora, nuestra empresa disfruta de
+          un entorno más limpio y seguro gracias a su eficiencia y compromiso.
+          ¡Un recurso invaluable!”
         </p>
       </Testimonial>
       <Screencasts />
