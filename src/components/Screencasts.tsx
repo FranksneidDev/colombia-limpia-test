@@ -12,42 +12,51 @@ import logistica from '@/images/services/logistica.jpeg'
 
 const services = [
   {
-    title: 'Getting started with Figma',
+    title: 'Conserjeria',
     description:
-      'Get familiar with the Figma UI, the different tools it offers, and the most important features.',
+      'Ofrecemos un servicio integral de conserjería con personal\n' +
+        'especializado en funciones como aseo integral, jardinería y\n' +
+        'toderos, asegurando que tu empresa opere de manera\n' +
+        'eficiente y segura.',
     image: conserje,
     runtime: { minutes: 16, seconds: 54 },
   },
   {
-    title: 'Setting up your artboard',
+    title: 'Aseo Integral',
     description:
-      'Learn how to create a new artboard and configure your grid and rulers for designing icons.',
+      'Nuestro servicio de aseo integral asegura un ambiente limpio\n' +
+        'y seguro para conjuntos residenciales y empresa',
     image: aseo,
     runtime: { minutes: 9, seconds: 12 },
   },
   {
-    title: 'Designing your first icon',
+    title: 'Jardineria',
     description:
-      'Using basic shapes and boolean operations, learn how to design your own notification icon from scratch.',
+      'Nuestro equipo de jardinería profesional asegura áreas\n' +
+        'verdes bien cuidadas y atractivas para conjuntos\n' +
+        'residenciales o empresas.',
     image: jardineria,
     runtime: { minutes: 23, seconds: 25 },
   },
   {
-    title: 'Advanced design techniques',
+    title: 'Todero',
     description:
-      'Learn the techniques you need to know to adapt your original icon to a modern duotone style.',
+      'Nuestro servicio de Todero está diseñado para atender tareas\n' +
+        'generales de mantenimiento y reparaciones en conjuntos\n' +
+        'residenciales, oficinas y empresas.',
     image: todero,
     runtime: { minutes: 28, seconds: 44 },
   },
   {
-    title: 'Advanced design techniques',
+    title: 'Piscinas',
     description:
-        'Learn the techniques you need to know to adapt your original icon to a modern duotone style.',
+        'Aseguramos un mantenimiento impecable de las\n' +
+        'piscinas en conjuntos residenciales y empresas',
     image: piscina,
     runtime: { minutes: 28, seconds: 44 },
   },
   {
-    title: 'Advanced design techniques',
+    title: 'Logistica',
     description:
         'Learn the techniques you need to know to adapt your original icon to a modern duotone style.',
     image: logistica,
@@ -97,34 +106,19 @@ export function Screencasts() {
           role="list"
           className="grid grid-cols-1 gap-x-8 gap-y-10 [counter-reset:video] sm:grid-cols-2 lg:grid-cols-3"
         >
-          {services.map((service) => (
-            <li key={service.title} className="[counter-increment:video]">
-              <div className="relative flex h-60 items-center justify-center rounded-2xl px-6 shadow-lg"
-                // style={{
-                //   backgroundImage:
-                //     'conic-gradient(from -49.8deg at 50% 50%, #7331FF 0deg, #00A3FF 59.07deg, #4E51FF 185.61deg, #39DBFF 284.23deg, #B84FF1 329.41deg, #7331FF 360deg)',
-                // }}
-              >
-                <div className="flex overflow-hidden rounded-2xl border-2 border-black">
-                  <Image src={service.image} alt="" unoptimized />
-                </div>
-                {/*<div className="absolute bottom-2 left-2 flex items-center rounded-lg bg-black/30 px-1.5 py-0.5 text-sm text-white [@supports(backdrop-filter:blur(0))]:bg-white/10 [@supports(backdrop-filter:blur(0))]:backdrop-blur-sm">*/}
-                {/*  <PlayIcon className="h-4 w-4 fill-current stroke-current" />*/}
-                {/*  <time*/}
-                {/*    dateTime={`${video.runtime.minutes}m ${video.runtime.seconds}s`}*/}
-                {/*    className="ml-2"*/}
-                {/*  >*/}
-                {/*    {`${video.runtime.minutes}:${video.runtime.seconds*/}
-                {/*      .toString()*/}
-                {/*      .padStart(2, '0')}`}*/}
-                {/*  </time>*/}
-                {/*</div>*/}
-              </div>
-              <h3 className="mt-8 text-base font-medium tracking-tight text-slate-900 before:mb-2 before:block before:font-mono before:text-sm before:text-slate-500 before:content-[counter(video,decimal-leading-zero)]">
-                {service.title}
-              </h3>
-              <p className="mt-2 text-sm text-slate-600">{service.description}</p>
-            </li>
+          {services.map((service, index) => (
+              <li key={`${service.title}-${index}`} className="[counter-increment:video]">
+                <Image
+                    src={service.image}
+                    alt=""
+                    unoptimized
+                    className="w-full lg:w-72 lg:h-60 object-cover rounded-3xl border-2 border-gray-600 shadow-lg"
+                />
+                <h3 className="mt-8 text-base font-medium tracking-tight text-slate-900 before:mb-2 before:block before:font-mono before:text-sm before:text-slate-500 before:content-[counter(video,decimal-leading-zero)]">
+                  {service.title}
+                </h3>
+                <p className="mt-2 text-sm text-slate-600 text-justify">{service.description}</p>
+              </li>
           ))}
         </ol>
       </Container>
