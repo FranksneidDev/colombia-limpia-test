@@ -52,10 +52,10 @@ export default function Home() {
         </p>
       </Testimonial>
       <Resources />
-      <FreeChapters />
       <Pricing />
       <Testimonials />
       <Author />
+      <FreeChapters />
       <Footer />
     </>
   )

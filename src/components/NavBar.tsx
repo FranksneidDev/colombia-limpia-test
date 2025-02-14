@@ -17,7 +17,7 @@ const sections = [
   { id: 'screencasts', title: 'Servicios' },
   { id: 'resources', title: 'Proceso de Selección' },
   { id: 'pricing', title: 'Beneficios' },
-  { id: 'author', title: 'Capacitación' },
+  { id: 'free-chapters', title: 'Contacto' },
 ]
 
 function MenuIcon({

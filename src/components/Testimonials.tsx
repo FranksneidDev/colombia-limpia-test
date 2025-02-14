@@ -21,10 +21,10 @@ const testimonials = [
   [
     {
       content:
-        'Mira’s teaching style is second to none. Everything was easy to follow every step of the way.',
+        'Desde que contratamos los servicios de Colombia Limpia, nuestras instalaciones se mantienen impecables. Su equipo es profesional, puntual y altamente capacitado. ¡Totalmente recomendados!',
       author: {
         name: 'Antonio Littel',
-        role: 'Frontend Developer',
+        role: 'Gerente de Operaciones',
         image: avatarImage3,
       },
     },
@@ -33,16 +33,16 @@ const testimonials = [
         'Even though I was excited to learn, I was pessimistic that I wouldn’t actually ever get good enough to design my own icons. I was wrong — this book is all I needed.',
       author: {
         name: 'Lynn Nolan',
-        role: 'Growth Marketer',
+        role: 'Directora Administrativa',
         image: avatarImage4,
       },
     },
     {
       content:
-        'I’ve been employed as a professional icon designer for years and still learned tons of new tricks that have made my work even better',
+        'Colombia Limpia ha superado nuestras expectativas. Su compromiso con la limpieza y el mantenimiento es evidente en cada detalle. Sin duda, una inversión que vale la pena',
       author: {
         name: 'Krista Prosacco',
-        role: 'Professional Designer',
+        role: 'Directora Logistica',
         image: avatarImage9,
       },
     },
@@ -50,28 +50,28 @@ const testimonials = [
   [
     {
       content:
-        'I run an ecommerce store selling rare vintage gummy bears and could never find a good gummy bear icon. Now I can design my own in minutes.',
+        'La eficiencia y calidad del servicio de Colombia Limpia han sido excepcionales. Siempre cumplen con lo prometido y dejan cada área en perfectas condiciones.',
       author: {
         name: 'Cameron Considine',
-        role: 'Entrepreneur',
+        role: 'Jefe de Operaciones',
         image: avatarImage7,
       },
     },
     {
       content:
-        'The complete package is worth it for the weekly teardown videos alone. I’ve learned so much watching Mira take apart other icons and recreate them from scratch.',
+        'No solo ofrecen limpieza, sino un servicio integral que optimiza nuestro entorno de trabajo. Con Colombia Limpia, tenemos la tranquilidad de contar con un equipo profesional y comprometido.',
       author: {
         name: 'Regina Wisoky',
-        role: 'Design Student',
+        role: 'Director de Diseño',
         image: avatarImage11,
       },
     },
     {
       content:
-        'I didn’t expect to find a lot of value in the community but now I’m in there for at least an hour every day picking up tips from other designers.',
+        'Lo que más nos gusta de Colombia Limpia es su atención al cliente. Se adaptan a nuestras necesidades y nos brindan soluciones a la medida. ¡Un servicio de primera!',
       author: {
         name: 'Vernon Cummerata',
-        role: 'UI Engineer',
+        role: 'Ingeniero UI',
         image: avatarImage8,
       },
     },
@@ -79,28 +79,28 @@ const testimonials = [
   [
     {
       content:
-        'I couldn’t believe how fast Mira moved in Figma compared to my own workflow. I’m designing icons more accurately in half the time with the shortcuts I learned from her videos.',
+        'Desde la primera visita, supimos que habíamos tomado la mejor decisión. Su equipo es profesional y su trabajo habla por sí solo. ¡100% recomendados!',
       author: {
         name: 'Steven Hackett',
-        role: 'Bootcamp Instructor',
+        role: 'Contador',
         image: avatarImage5,
       },
     },
     {
       content:
-        'I never thought I would enjoy designing icons but using the ideas in this book, it’s become a great way for me to relax while still being creative.',
+        'Cada detalle cuenta, y eso lo sabe muy bien Colombia Limpia. Nos han brindado un servicio impecable que ha mejorado notablemente la imagen de nuestras instalaciones.',
       author: {
         name: 'Carla Schoen',
-        role: 'Startup Founder',
+        role: 'CEO de Innovatech',
         image: avatarImage10,
       },
     },
     {
       content:
-        'All I can say is wow — this is easily the best icon design resource I’ve ever encountered.',
+        'Colombia Limpia nos ha brindado tranquilidad. Su equipo es confiable y siempre cumplen con los más altos estándares de calidad. Sin duda, seguiremos trabajando con ellos.',
       author: {
         name: 'Leah Kiehn',
-        role: 'Creative Director',
+        role: 'Director Creativo',
         image: avatarImage6,
       },
     },
@@ -147,12 +147,13 @@ export function Testimonials() {
     <section className="py-8 sm:py-10 lg:py-16">
       <Container className="text-center">
         <h2 className="font-display text-4xl font-bold tracking-tight text-slate-900">
-          Some kind words from early customers...
+          Algunas palabras amables de los primeros clientes...
         </h2>
         <p className="mt-4 text-lg tracking-tight text-slate-600">
-          I worked with a small group of early access customers to make sure all
-          of the content in the book was exactly what they needed. Hears what
-          they had to say about the finished product.
+          Trabajamos de la mano con un grupo selecto de clientes para
+          asegurarnos de que cada detalle de nuestro servicio cumpliera con sus
+          expectativas y necesidades. Aquí está lo que tienen para decir sobre
+          su experiencia con nosotros.
         </p>
       </Container>
       <Expandable className="group mt-16">
