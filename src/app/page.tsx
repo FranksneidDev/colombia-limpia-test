@@ -16,9 +16,9 @@ import avatarImage2 from '@/images/avatars/avatar-2.png'
 export default function Home() {
   return (
     <>
-      <NavBar />
       <Hero />
       <Introduction />
+      <NavBar />
       <TableOfContents />
       <Testimonial
         id="testimonial-from-tommy-stroman"
