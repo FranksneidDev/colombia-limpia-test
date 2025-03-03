@@ -12,29 +12,33 @@ export function Introduction() {
     >
       <Container className="text-lg tracking-tight text-slate-700">
         <p className="font-display text-4xl font-bold tracking-tight text-slate-900">
-          “Everything Starts as a Square” is a book and video course that
-          teaches you a simple method to designing icons that anyone can learn.
+          “En Colombia Limpia Soluciones S.A.S. nos especializamos en ofrecer
+          servicios integrales de aseo, mantenimiento y seguridad para empresas,
+          conjuntos residenciales, hospitales, centros comerciales y entidades
+          bancarias.
         </p>
         <p className="mt-4">
-          Before I learned how to design icons myself, I always imagined that
-          they were drawn by hand using the pen tool, some sort of fancy
-          graphics tablet, and hours and hours spent manually fine-tuning bezier
-          curves.
+          Nuestro equipo trabaja con un enfoque en la calidad, la eficiencia y
+          la innovación, desarrollando soluciones personalizadas que garantizan
+          espacios limpios, seguros y funcionales.
         </p>
         <p className="mt-4">
-          But it turns out this isn’t how great icon designers work at all.
+          Creemos que un entorno bien cuidado marca la diferencia, por eso cada
+          proyecto es una oportunidad para superar las expectativas de nuestros
+          clientes y asegurar el bienestar de todos los que lo habitan.
         </p>
         <p className="mt-4">
-          In “Everything Starts as a Square”, you’ll learn the systems experts
-          use to create pixel perfect icons, without relying on a steady hand.
+          Con procesos optimizados, precios competitivos y un compromiso
+          constante con la mejora continua, somos aliados estratégicos para
+          quienes buscan excelencia en cada detalle.
         </p>
         <ul role="list" className="mt-8 space-y-3">
           {[
-            'Using boolean operations to combine basic shapes into complex icons',
-            'How to adapt icons to different sizes',
-            'Translating icons from an outline style to a solid style',
-            'Identifying the characteristics that make an icon set cohesive',
-            'Figma features and keyboard shortcuts to speed up your workflow',
+            'Servicios de aseo integral adaptados a cada tipo de espacio',
+            'Mantenimiento preventivo y correctivo para garantizar funcionalidad',
+            'Soluciones de seguridad enfocadas en la protección de personas y bienes',
+            'Personal capacitado y procesos certificados de alta calidad',
+            'Innovación constante para optimizar resultados y reducir costos',
           ].map((feature) => (
             <li key={feature} className="flex">
               <CheckIcon className="h-8 w-8 flex-none fill-blue-500" />
@@ -43,16 +47,17 @@ export function Introduction() {
           ))}
         </ul>
         <p className="mt-8">
-          By the end of the book, you’ll have all the confidence you need to dig
-          in and start creating beautiful icons that can hold their own against
-          any of the sets you can find online.
+          Al confiar en nosotros, tendrás la tranquilidad de contar con un
+          equipo experto, procesos eficientes y soluciones integrales que
+          garantizan espacios impecables, seguros y listos para brindar la mejor
+          experiencia a todos quienes los disfrutan.
         </p>
         <p className="mt-10">
           <Link
             href="#free-chapters"
             className="text-base font-medium text-blue-600 hover:text-blue-800"
           >
-            Get two free chapters straight to your inbox{' '}
+            Solicita tu cotización gratuita. Mejora tus espacios hoy{' '}
             <span aria-hidden="true">&rarr;</span>
           </Link>
         </p>
