@@ -74,7 +74,7 @@ export function TableOfContents() {
       aria-labelledby="table-of-contents-title"
       className="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32"
     >
-      <Container>
+      <Container size="lg">
         <SectionHeading number="1" id="table-of-contents-title">
           Sobre Nosotros
         </SectionHeading>

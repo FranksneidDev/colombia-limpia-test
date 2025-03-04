@@ -10,7 +10,7 @@ export function Introduction() {
       aria-label="Introduction"
       className="pt-20 pb-16 sm:pb-20 md:pt-36 lg:py-32"
     >
-      <Container className="text-lg tracking-tight text-slate-700">
+      <Container size="lg" className="text-lg tracking-tight text-slate-700">
         <p className="font-display text-4xl font-bold tracking-tight text-slate-900">
           “En Colombia Limpia Soluciones S.A.S. nos especializamos en ofrecer
           servicios integrales de aseo, mantenimiento y seguridad para empresas,

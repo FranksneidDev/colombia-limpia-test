@@ -108,7 +108,7 @@ export function Resources() {
           trabajo.
         </p>
       </Container>
-      <Container size="lg" className="mt-16">
+      <Container size="md" className="mt-16">
         <ol
           role="list"
           className="-mx-3 grid grid-cols-1 gap-y-10 lg:grid-cols-3 lg:text-center xl:-mx-12 xl:divide-x xl:divide-slate-400/20"
@@ -118,14 +118,14 @@ export function Resources() {
               key={resource.title}
               className="grid auto-rows-min grid-cols-1 items-center gap-8 px-3 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-1 xl:px-12"
             >
-              <div className="relative overflow-hidden rounded-2xl shadow-lg h-96">
+              <div className="relative overflow-hidden rounded-2xl shadow-lg h-72">
                 <resource.image />
               </div>
               <div>
                 <h3 className="text-base font-medium tracking-tight text-slate-900">
                   {resource.title}
                 </h3>
-                <p className="mt-2 text-sm text-slate-600">
+                <p className="mt-2 text-sm text-gray-700 text-justify">
                   {resource.description}
                 </p>
               </div>
