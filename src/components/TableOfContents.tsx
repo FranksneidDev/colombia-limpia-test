@@ -7,6 +7,7 @@ import {
 } from '@/components/Expandable'
 import { SectionHeading } from '@/components/SectionHeading'
 import mapcities from '@/images/colombia-limpia/map.jpg'
+import mission from '@/images/colombia-limpia/mision.png'
 
 const cities = [
   'Barranquilla',
@@ -26,7 +27,6 @@ const cities = [
   'Sogamoso',
   'Riohacha',
 ]
-
 
 const tableOfContents = {
   'Donde Estamos?': {
@@ -96,7 +96,7 @@ export function TableOfContents() {
               <h3 className="font-display text-4xl font-bold tracking-tight text-[#325c89]">
                 ¿Dónde estamos?
               </h3>
-              <div className="flex justify-center items-center">
+              <div className="flex items-center justify-center">
                 <div className="mr-4 h-60 w-[3px] bg-[#325c89]" />
                 <ol
                   role="list"
@@ -126,17 +126,35 @@ export function TableOfContents() {
             </div>
           </div>
         </Expandable>
-
-        <h2 className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
-          Misión
-        </h2>
-        <p className="mt-4 text-justify text-lg tracking-tight text-slate-700">
-          Nuestra misión es brindar servicios de aseo integral, seguridad y
-          mantenimiento con un enfoque en calidad, eficiencia y precios
-          competitivos. Nos destacamos por asegurar la satisfacción de nuestros
-          clientes a través de soluciones efectivas, ajustadas a las necesidades
-          de cada espacio.
-        </p>
+        <Expandable>
+          <div className="mt-24 flex flex-col gap-8 sm:flex-row sm:items-center">
+            <div className="sm:w-1/2 lg:flex lg:h-full lg:flex-col lg:justify-center">
+              <h3 className="font-display text-4xl font-bold tracking-tight text-[#325c89]">
+                Misión
+              </h3>
+              <p className="mt-4 text-justify text-lg tracking-tight text-slate-700">
+                Nuestra misión es brindar servicios de aseo integral, seguridad
+                y mantenimiento con un enfoque en calidad, eficiencia y precios
+                competitivos. Nos destacamos por asegurar la satisfacción de
+                nuestros clientes a través de soluciones efectivas, ajustadas a
+                las necesidades de cada espacio.
+              </p>
+            </div>
+            <div className="flex flex-col items-center sm:w-1/2">
+              <Image
+                src={mission}
+                alt="Ubicación"
+                width={300}
+                className="rounded-t-2xl object-cover"
+              />
+              <div className="w-[300px] rounded-b-2xl border border-[#325c89] bg-white px-4 py-3 text-center">
+                <p className="text-xl font-medium text-slate-700">
+                  NUESTRO PROPOSITO
+                </p>
+              </div>
+            </div>
+          </div>
+        </Expandable>
       </Container>
     </section>
   )
