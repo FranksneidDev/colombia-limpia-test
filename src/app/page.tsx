@@ -20,37 +20,37 @@ export default function Home() {
       <Introduction />
       <NavBar />
       <TableOfContents />
-      <Testimonial
-        id="testimonial-from-tommy-stroman"
-        author={{
-          name: 'Alex Stroman',
-          role: 'Gerente de operaciones',
-          image: avatarImage1,
-        }}
-      >
-        <p>
-          “No sabía nada sobre gestión de aseo y mantenimiento hasta que conocí
-          los servicios de Colombia Limpia. Ahora, nuestra empresa disfruta de
-          un entorno más limpio y seguro gracias a su eficiencia y compromiso.
-          ¡Un recurso invaluable!”
-        </p>
-      </Testimonial>
+      {/*<Testimonial*/}
+      {/*  id="testimonial-from-tommy-stroman"*/}
+      {/*  author={{*/}
+      {/*    name: 'Alex Stroman',*/}
+      {/*    role: 'Gerente de operaciones',*/}
+      {/*    image: avatarImage1,*/}
+      {/*  }}*/}
+      {/*>*/}
+      {/*  <p>*/}
+      {/*    “No sabía nada sobre gestión de aseo y mantenimiento hasta que conocí*/}
+      {/*    los servicios de Colombia Limpia. Ahora, nuestra empresa disfruta de*/}
+      {/*    un entorno más limpio y seguro gracias a su eficiencia y compromiso.*/}
+      {/*    ¡Un recurso invaluable!”*/}
+      {/*  </p>*/}
+      {/*</Testimonial>*/}
       <Screencasts />
-      <Testimonial
-        id="testimonial-from-gerardo-stark"
-        author={{
-          name: 'Gerardo Rodriguez',
-          role: 'Coordinador Logistico',
-          image: avatarImage2,
-        }}
-      >
-        <p>
-          “Había intentado manejar el mantenimiento por mi cuenta, pero siempre
-          surgían problemas. Desde que contamos con los servicios de Colombia
-          Limpia, todo funciona de manera más eficiente y sin contratiempos. Su
-          profesionalismo ha hecho una gran diferencia en nuestro entorno.”
-        </p>
-      </Testimonial>
+      {/*<Testimonial*/}
+      {/*  id="testimonial-from-gerardo-stark"*/}
+      {/*  author={{*/}
+      {/*    name: 'Gerardo Rodriguez',*/}
+      {/*    role: 'Coordinador Logistico',*/}
+      {/*    image: avatarImage2,*/}
+      {/*  }}*/}
+      {/*>*/}
+      {/*  <p>*/}
+      {/*    “Había intentado manejar el mantenimiento por mi cuenta, pero siempre*/}
+      {/*    surgían problemas. Desde que contamos con los servicios de Colombia*/}
+      {/*    Limpia, todo funciona de manera más eficiente y sin contratiempos. Su*/}
+      {/*    profesionalismo ha hecho una gran diferencia en nuestro entorno.”*/}
+      {/*  </p>*/}
+      {/*</Testimonial>*/}
       <Resources />
       <Pricing />
       <Testimonials />
