@@ -286,7 +286,7 @@ export function Screencasts() {
       </Container>
       <Container size="lg" className="mt-16">
         <div className="mt-16 flex flex-col gap-8 text-justify sm:items-start lg:flex-row lg:px-5">
-          <div className="mt-10 lg:w-5xl">
+          <div className="lg:mt-10 lg:w-5xl">
             <h3 className="font-display text-4xl font-bold tracking-tight text-[#325c89]">
               Jardinería
             </h3>
@@ -372,7 +372,7 @@ export function Screencasts() {
             <div className="hidden h-auto w-1 bg-gray-300 lg:block"></div>
           </div>
 
-          <div className="mt-10 lg:w-5xl">
+          <div className="lg:mt-10 lg:w-5xl">
             <h3 className="font-display text-4xl font-bold tracking-tight text-[#325c89]">
               Todero
             </h3>
@@ -429,7 +429,7 @@ export function Screencasts() {
       </Container>
       <Container size="lg" className="mt-16">
         <div className="mt-16 flex flex-col gap-8 text-justify sm:items-start lg:flex-row lg:px-5">
-          <div className="mt-10 lg:w-5xl">
+          <div className="lg:mt-10 lg:w-5xl">
             <h3 className="font-display text-4xl font-bold tracking-tight text-[#325c89]">
               Piscinas
             </h3>
