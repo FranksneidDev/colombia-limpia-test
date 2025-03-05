@@ -1,9 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
-
-import { GridPattern } from '@/components/GridPattern'
-import { SectionHeading } from '@/components/SectionHeading'
-import image3 from '@/images/selection/image3.jpeg'
+import men from '@/images/colombia-limpia/men.png'
+import { Container } from '@/components/Container'
 
 function XIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -20,61 +18,72 @@ export function Author() {
       aria-labelledby="author-title"
       className="relative scroll-mt-14 pt-8 pb-3 sm:scroll-mt-32 sm:pt-10 sm:pb-16 lg:pt-16"
     >
-      <div className="absolute inset-x-0 top-1/2 bottom-0 text-slate-900/10 [mask-image:linear-gradient(transparent,white)]">
-        <GridPattern x="50%" y="100%" />
-      </div>
-      <div className="relative mx-auto max-w-5xl pt-16 sm:px-6">
-        <div className="bg-slate-50 pt-px sm:rounded-6xl">
-          <div className="relative mx-auto -mt-16 h-44 w-44 overflow-hidden rounded-full bg-slate-200 md:float-right md:h-64 md:w-64 md:[shape-outside:circle(40%)] lg:mr-20 lg:h-72 lg:w-72">
-            <Image
-              className="absolute inset-0 h-full w-full object-cover"
-              src={image3}
-              alt=""
-              sizes="(min-width: 1024px) 18rem, (min-width: 768px) 16rem, 11rem"
-            />
+      <Container size="lg" className="mt-16">
+        <div className="mt-16 flex flex-col-reverse gap-8 text-justify sm:items-start lg:flex-row lg:px-5">
+          {/* Imagen abajo en móvil */}
+          <div className="flex w-full justify-center gap-10 lg:w-1/2">
+            <div className="flex w-full max-w-[350px] flex-col items-center overflow-hidden border-2 border-gray-300 shadow-md">
+              <Image
+                src={men}
+                alt="Ubicación"
+                unoptimized
+                width={350}
+                height={350}
+                className="h-auto w-full object-cover"
+              />
+              <div className="w-full bg-white px-4 py-3 text-left">
+                <h2 className="text-center text-base font-semibold text-gray-900">
+                  TU SOLUCIÓN IDEAL
+                </h2>
+              </div>
+            </div>
           </div>
-          <div className="px-4 py-10 sm:px-10 sm:py-16 md:py-20 lg:px-20 lg:py-32">
-            {/*<SectionHeading number="5" id="author-title">*/}
-            {/*  Capacitación y Desarrollo*/}
-            {/*  del Personal*/}
-            {/*</SectionHeading>*/}
-            <h2 className="mt-4 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
-              <span className="block text-4xl text-blue-600">Colombia Limpia - S.A.S.</span>
+
+          {/* Texto arriba en móvil */}
+          <div className="lg:mt-10 lg:w-5xl">
+            <h3 className="font-display text-4xl font-bold tracking-tight text-[#325c89]">
               Capacitación y Desarrollo del Personal
-            </h2>
-            <p className="mt-4 text-lg tracking-tight text-slate-700">
+            </h3>
+            <p className="mt-4 text-lg  text-gray-900">
               En Colombia Limpia SAS, fomentamos el crecimiento y desarrollo
               profesional de nuestros colaboradores a través de:
             </p>
-            <p className="mt-4 text-lg tracking-tight text-slate-700">
-              • <span className="text-blue-600 font-bold">Inducción y Adaptación:</span>
-              Ayudamos a los nuevos empleados
-              a comprender la misión, visión y normas de la empresa.
-            </p>
-            <p className="mt-4 text-lg tracking-tight text-slate-700">
-              • <span className="text-blue-600 font-bold">Capacitación Continua: </span>
-              Planeamos capacitaciones
-              específicas para optimizar las competencias requeridas para
-              cada cargo.
-            </p>
-            <p className="mt-4 text-lg tracking-tight text-slate-700">
-              • <span className="text-blue-600 font-bold"> Evaluación de Desempeño: </span>
-              Realizamos evaluaciones
-              periódicas para medir el desarrollo de competencias y
-              garantizar un buen desempeño en cada rol.
-            </p>
-            <p className="mt-8">
-              <Link
-                  href="#"
-                  className="inline-flex items-center text-base font-medium tracking-tight text-slate-900"
-              >
-                <XIcon className="h-10 w-10 fill-current"/>
-                <span className="ml-4">Siguenos en X</span>
-              </Link>
-            </p>
+
+            <ul className="mt-10 space-y-3 text-base text-gray-900">
+              <li className="mt-10 flex items-start">
+                <span className="mr-2 text-[#325c89]">•</span>
+                <p>
+                  <span className="font-bold text-[#325c89]">
+                    Inducción y Adaptación:
+                  </span>
+                  Identificamos y seleccionamos personal apto para cumplir con
+                  los perfiles requeridos por nuestros clientes.
+                </p>
+              </li>
+              <li className="mt-10 flex items-start">
+                <span className="mr-2 text-[#325c89]">•</span>
+                <p>
+                  <span className="font-bold text-[#325c89]">
+                    Capacitación Continua:
+                  </span>
+                  Planeamos capacitaciones específicas para optimizar las
+                  competencias requeridas para cada cargo.
+                </p>
+              </li>
+              <li className="mt-10 flex items-start">
+                <span className="mr-2 text-[#325c89]">•</span>
+                <p>
+                  <span className="font-bold text-[#325c89]">
+                    Evaluación de Desempeño:
+                  </span>
+                  Realizamos evaluaciones periódicas para medir el desarrollo de
+                  competencias y garantizar un buen desempeño en cada rol.
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   )
 }

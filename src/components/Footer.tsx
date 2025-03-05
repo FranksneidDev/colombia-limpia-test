@@ -2,7 +2,7 @@ import { GridPattern } from '@/components/GridPattern'
 
 export function Footer() {
   return (
-    <footer className="relative pt-5 pb-20 sm:pt-14 sm:pb-32">
+    <footer className="relative pt-5 pb-20 sm:pt-14 sm:pb-24">
       <div className="absolute inset-x-0 top-0 h-32 text-slate-900/10 [mask-image:linear-gradient(white,transparent)]">
         <GridPattern x="50%" />
       </div>
@@ -13,7 +13,6 @@ export function Footer() {
                   Knot
               </a>
           </p>
-
           <p>Todos los derechos reservados</p>
       </div>
     </footer>

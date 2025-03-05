@@ -144,12 +144,12 @@ function Testimonial({
 
 export function Testimonials() {
   return (
-    <section className="py-8 sm:py-10 lg:py-24 border border-t">
+    <section className="border border-t py-8 sm:py-10 lg:py-24">
       <Container className="text-center">
-        <h2 className="font-display text-4xl font-bold tracking-tight text-slate-900">
+        <h2 className="font-display text-4xl font-bold tracking-tight text-[#325c89]">
           Algunas palabras amables de los primeros clientes...
         </h2>
-        <p className="mt-4 text-lg tracking-tight text-slate-600">
+        <p className="mt-4 text-lg tracking-tight text-gray-900">
           Trabajamos de la mano con un grupo selecto de clientes para
           asegurarnos de que cada detalle de nuestro servicio cumpliera con sus
           expectativas y necesidades. Aquí está lo que tienen para decir sobre
@@ -157,32 +157,37 @@ export function Testimonials() {
         </p>
       </Container>
       <Expandable className="group mt-16">
+        {/* Carrusel móvil */}
         <ul
           role="list"
-          className="mx-auto grid max-w-2xl grid-cols-1 gap-8 px-4 lg:max-w-7xl lg:grid-cols-3 lg:px-8"
+          className="flex snap-x snap-mandatory overflow-x-auto scroll-smooth lg:hidden"
         >
-          {testimonials
-            .map((column) => column[0])
-            .map((testimonial, testimonialIndex) => (
-              <li key={testimonialIndex} className="lg:hidden">
-                <Testimonial author={testimonial.author}>
-                  {testimonial.content}
-                </Testimonial>
-              </li>
-            ))}
-          {testimonials.map((column, columnIndex) => (
+          {testimonials.flat().map((testimonial, testimonialIndex) => (
             <li
-              key={columnIndex}
-              className="hidden group-data-expanded:list-item lg:list-item"
+              key={testimonialIndex}
+              className="w-full flex-shrink-0 snap-start px-4"
             >
+              <Testimonial author={testimonial.author}>
+                {testimonial.content}
+              </Testimonial>
+            </li>
+          ))}
+        </ul>
+
+        {/* Desktop (igual que antes) */}
+        <ul
+          role="list"
+          className="mx-auto hidden max-w-7xl grid-cols-3 gap-8 px-8 lg:grid"
+        >
+          {testimonials.map((column, columnIndex) => (
+            <li key={columnIndex}>
               <ul role="list">
                 <ExpandableItems>
                   {column.map((testimonial, testimonialIndex) => (
                     <li
                       key={testimonialIndex}
                       className={clsx(
-                        testimonialIndex === 0 && 'hidden lg:list-item',
-                        testimonialIndex === 1 && 'lg:mt-8',
+                        testimonialIndex === 1 && 'mt-8',
                         testimonialIndex > 1 && 'mt-8',
                       )}
                     >
@@ -196,6 +201,7 @@ export function Testimonials() {
             </li>
           ))}
         </ul>
+
         <ExpandableButton>Read more testimonials</ExpandableButton>
       </Expandable>
     </section>
