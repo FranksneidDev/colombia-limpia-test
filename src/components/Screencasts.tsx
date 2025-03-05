@@ -109,7 +109,7 @@ export function Screencasts() {
               key={`${service.title}-${index}`}
               className="flex w-full max-w-[100%] flex-shrink-0 flex-col items-center sm:w-full sm:max-w-none"
             >
-              <div className="flex w-full flex-col overflow-hidden rounded-3xl border-2 border-gray-600 shadow-lg">
+              <div className="flex w-full flex-col overflow-hidden border-2 border-gray-300 shadow-lg">
                 <Image
                   src={service.image}
                   alt={service.title}
@@ -147,7 +147,8 @@ export function Screencasts() {
                   <strong className="text-[#325c89]">
                     Selección de Personal Especializado:
                   </strong>{' '}
-                  Análisis riguroso de antecedentes para garantizar la mejor elección.
+                  Análisis riguroso de antecedentes para garantizar la mejor
+                  elección.
                 </p>
               </li>
               <li className="mt-5 flex items-start">
@@ -156,7 +157,8 @@ export function Screencasts() {
                   <strong className="text-[#325c89]">
                     Protocolos de Bioseguridad:
                   </strong>{' '}
-                  Implementamos estrictas medidas de higiene para proteger a todos.
+                  Implementamos estrictas medidas de higiene para proteger a
+                  todos.
                 </p>
               </li>
               <li className="mt-5 flex items-start">
@@ -165,7 +167,8 @@ export function Screencasts() {
                   <strong className="text-[#325c89]">
                     Supervisión Continua::
                   </strong>{' '}
-                  Supervisores y coordinadores en cada área, junto con capacitación constante.
+                  Supervisores y coordinadores en cada área, junto con
+                  capacitación constante.
                 </p>
               </li>
               <li className="mt-5 flex items-start">
@@ -174,7 +177,8 @@ export function Screencasts() {
                   <strong className="text-[#325c89]">
                     Compromiso con la Calidad:
                   </strong>{' '}
-                  Reacción inmediata y visitas programadas para un servicio óptimo.
+                  Reacción inmediata y visitas programadas para un servicio
+                  óptimo.
                 </p>
               </li>
             </ul>
@@ -202,8 +206,31 @@ export function Screencasts() {
         </div>
       </Container>
       <Container size="lg" className="mt-16">
-        <div className="mt-16 flex flex-col gap-8 text-justify sm:items-start lg:flex-row lg:px-5">
-          <div className="mt-10 lg:w-5xl">
+        <div className="mt-16 flex flex-col-reverse gap-8 text-justify sm:items-start lg:flex-row lg:px-5">
+
+          {/* Imagen abajo en móvil */}
+          <div className="flex w-full justify-center gap-10 lg:w-1/2">
+            <div className="flex w-full max-w-[350px] flex-col items-center overflow-hidden border-2 border-gray-300 shadow-md">
+              <Image
+                  src={clean}
+                  alt="Ubicación"
+                  unoptimized
+                  width={350}
+                  height={350}
+                  className="h-auto w-full object-cover"
+              />
+              <div className="w-full bg-white px-4 py-3 text-left">
+                <h2 className="text-base font-semibold text-gray-900">
+                  NUESTRO PROPÓSITO
+                </h2>
+                <p className="text-sm text-gray-800">ASEO INTEGRAL</p>
+              </div>
+            </div>
+            <div className="hidden h-auto w-1 bg-gray-300 lg:block"></div>
+          </div>
+
+          {/* Texto arriba en móvil */}
+          <div className="lg:mt-10 lg:w-5xl">
             <h3 className="font-display text-4xl font-bold tracking-tight text-[#325c89]">
               Aseo Integral
             </h3>
@@ -255,26 +282,6 @@ export function Screencasts() {
               </li>
             </ul>
           </div>
-
-          <div className="flex w-full justify-center gap-10 lg:w-1/2">
-            <div className="hidden h-auto w-1 bg-gray-300 lg:block"></div>
-            <div className="flex w-full max-w-[350px] flex-col items-center overflow-hidden border-2 border-gray-300 shadow-md">
-              <Image
-                src={clean}
-                alt="Ubicación"
-                unoptimized
-                width={350}
-                height={350}
-                className="h-auto w-full object-cover"
-              />
-              <div className="w-full bg-white px-4 py-3 text-left">
-                <h2 className="text-base font-semibold text-gray-900">
-                  NUESTRO PROPÓSITO
-                </h2>
-                <p className="text-sm text-gray-800">ASEO INTEGRAL</p>
-              </div>
-            </div>
-          </div>
         </div>
       </Container>
       <Container size="lg" className="mt-16">
@@ -284,8 +291,9 @@ export function Screencasts() {
               Jardinería
             </h3>
             <p className="mt-4 text-lg font-light text-gray-900">
-              Nuestro equipo de jardinería profesional asegura áreas verdes bien cuidadas
-              y atractivas para conjuntos residenciales o empresas. Ofrecemos:
+              Nuestro equipo de jardinería profesional asegura áreas verdes bien
+              cuidadas y atractivas para conjuntos residenciales o empresas.
+              Ofrecemos:
             </p>
 
             <ul className="mt-10 space-y-3 text-base text-gray-900">
@@ -304,7 +312,8 @@ export function Screencasts() {
                   <strong className="text-[#325c89]">
                     Supervisión Continua:
                   </strong>{' '}
-                  Monitoreo constante para asegurar estándares de calidad y la belleza de cada espacio verde.
+                  Monitoreo constante para asegurar estándares de calidad y la
+                  belleza de cada espacio verde.
                 </p>
               </li>
               <li className="mt-5 flex items-start">
@@ -313,7 +322,8 @@ export function Screencasts() {
                   <strong className="text-[#325c89]">
                     Personal Calificado:
                   </strong>{' '}
-                  Selección rigurosa de jardineros y capacitación en manejo adecuado de plantas y herramientas.
+                  Selección rigurosa de jardineros y capacitación en manejo
+                  adecuado de plantas y herramientas.
                 </p>
               </li>
             </ul>
@@ -341,15 +351,35 @@ export function Screencasts() {
         </div>
       </Container>
       <Container size="lg" className="mt-16">
-        <div className="mt-16 flex flex-col gap-8 text-justify sm:items-start lg:flex-row lg:px-5">
+        <div className="mt-16 flex flex-col-reverse gap-8 text-justify sm:items-start lg:flex-row lg:px-5">
+          <div className="flex w-full justify-center gap-10 lg:w-1/2">
+            <div className="flex w-full max-w-[350px] flex-col items-center overflow-hidden border-2 border-gray-300 shadow-md">
+              <Image
+                  src={tod}
+                  alt="Ubicación"
+                  unoptimized
+                  width={350}
+                  height={350}
+                  className="h-auto w-full object-cover"
+              />
+              <div className="w-full bg-white px-4 py-3 text-left">
+                <h2 className="text-base font-semibold text-gray-900">
+                  EFICIENCIA DIARIA
+                </h2>
+                <p className="text-sm text-gray-800">CONSERJERÍA</p>
+              </div>
+            </div>
+            <div className="hidden h-auto w-1 bg-gray-300 lg:block"></div>
+          </div>
+
           <div className="mt-10 lg:w-5xl">
             <h3 className="font-display text-4xl font-bold tracking-tight text-[#325c89]">
               Todero
             </h3>
             <p className="mt-4 text-lg font-light text-gray-900">
-              Nuestro servicio de Todero está diseñado para atender tareas generales de mantenimiento
-              y reparaciones en conjuntos residenciales,
-              oficinas y empresas. Ofrecemos:
+              Nuestro servicio de Todero está diseñado para atender tareas
+              generales de mantenimiento y reparaciones en conjuntos
+              residenciales, oficinas y empresas. Ofrecemos:
             </p>
 
             <ul className="mt-10 space-y-3 text-base text-gray-900">
@@ -359,7 +389,8 @@ export function Screencasts() {
                   <strong className="text-[#325c89]">
                     Tareas de mantenimiento menor:
                   </strong>{' '}
-                  Ajustes eléctricos, plomería básica, pintura, limpieza de canales y reparaciones en general.
+                  Ajustes eléctricos, plomería básica, pintura, limpieza de
+                  canales y reparaciones en general.
                 </p>
               </li>
               <li className="mt-5 flex items-start">
@@ -377,7 +408,8 @@ export function Screencasts() {
                   <strong className="text-[#325c89]">
                     Supervisión constante:
                   </strong>{' '}
-                  Garantizamos que las tareas se realicen de manera eficiente y segura.
+                  Garantizamos que las tareas se realicen de manera eficiente y
+                  segura.
                 </p>
               </li>
               <li className="mt-5 flex items-start">
@@ -393,26 +425,6 @@ export function Screencasts() {
               </li>
             </ul>
           </div>
-
-          <div className="flex w-full justify-center gap-10 lg:w-1/2">
-            <div className="hidden h-auto w-1 bg-gray-300 lg:block"></div>
-            <div className="flex w-full max-w-[350px] flex-col items-center overflow-hidden border-2 border-gray-300 shadow-md">
-              <Image
-                src={tod}
-                alt="Ubicación"
-                unoptimized
-                width={350}
-                height={350}
-                className="h-auto w-full object-cover"
-              />
-              <div className="w-full bg-white px-4 py-3 text-left">
-                <h2 className="text-base font-semibold text-gray-900">
-                  EFICIENCIA DIARIA
-                </h2>
-                <p className="text-sm text-gray-800">CONSERJERÍA</p>
-              </div>
-            </div>
-          </div>
         </div>
       </Container>
       <Container size="lg" className="mt-16">
@@ -422,7 +434,8 @@ export function Screencasts() {
               Piscinas
             </h3>
             <p className="mt-4 text-lg font-light text-gray-900">
-              Aseguramos un mantenimiento impecable de las piscinas en conjuntos residenciales y empresas.
+              Aseguramos un mantenimiento impecable de las piscinas en conjuntos
+              residenciales y empresas.
             </p>
             <ul className="mt-10 space-y-3 text-base text-gray-900">
               <li className="mt-10 flex items-start">
@@ -486,8 +499,30 @@ export function Screencasts() {
         </div>
       </Container>
       <Container size="lg" className="mt-16">
-        <div className="mt-16 flex flex-col gap-8 text-justify sm:items-start lg:flex-row lg:px-5">
-          <div className="mt-10 lg:w-5xl">
+        <div className="mt-16 flex flex-col-reverse gap-8 text-justify sm:items-start lg:flex-row lg:flex-row lg:px-5">
+          {/* Imagen a la izquierda */}
+          <div className="flex w-full justify-center gap-10 lg:w-1/2">
+            <div className="flex w-full max-w-[350px] flex-col items-center overflow-hidden border-2 border-gray-300 shadow-md">
+              <Image
+                  src={logist}
+                  alt="Logística"
+                  unoptimized
+                  width={350}
+                  height={350}
+                  className="h-auto w-full object-cover"
+              />
+              <div className="w-full bg-white px-4 py-3 text-left">
+                <h2 className="text-base font-semibold text-gray-900">
+                  EFICIENCIA ASEGURADA
+                </h2>
+                <p className="text-sm text-gray-800">LOGÍSTICA</p>
+              </div>
+            </div>
+            <div className="hidden h-auto w-1 bg-gray-300 lg:block"></div>
+          </div>
+
+          {/* Texto a la derecha */}
+          <div className="lg:mt-10 lg:w-5xl">
             <h3 className="font-display text-4xl font-bold tracking-tight text-[#325c89]">
               Logística
             </h3>
@@ -529,30 +564,10 @@ export function Screencasts() {
                   <strong className="text-[#325c89]">
                     Compromiso con la Seguridad:
                   </strong>{' '}
-                  AProtocolos de bioseguridad y asesorías en seguridad adaptadas.
+                  Protocolos de bioseguridad y asesorías en seguridad adaptadas.
                 </p>
               </li>
             </ul>
-          </div>
-
-          <div className="flex w-full justify-center gap-10 lg:w-1/2">
-            <div className="hidden h-auto w-1 bg-gray-300 lg:block"></div>
-            <div className="flex w-full max-w-[350px] flex-col items-center overflow-hidden border-2 border-gray-300 shadow-md">
-              <Image
-                src={logist}
-                alt="Ubicación"
-                unoptimized
-                width={350}
-                height={350}
-                className="h-auto w-full object-cover"
-              />
-              <div className="w-full bg-white px-4 py-3 text-left">
-                <h2 className="text-base font-semibold text-gray-900">
-                  EFICIENCIA ASEGURADA
-                </h2>
-                <p className="text-sm text-gray-800">LOGÍSTICA</p>
-              </div>
-            </div>
           </div>
         </div>
       </Container>

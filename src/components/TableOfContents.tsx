@@ -145,9 +145,9 @@ export function TableOfContents() {
                 src={mission}
                 alt="Ubicación"
                 width={300}
-                className="rounded-t-2xl object-cover"
+                className="object-cover"
               />
-              <div className="w-[300px] rounded-b-2xl border border-[#325c89] bg-white px-4 py-3 text-center">
+              <div className="w-[300px]  border-2 border-gray-300 shadow-lg border-[#325c89] bg-white px-4 py-3 text-center">
                 <p className="text-xl font-medium text-slate-700">
                   NUESTRO PROPOSITO
                 </p>
