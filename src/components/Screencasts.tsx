@@ -92,7 +92,7 @@ export function Screencasts() {
         <SectionHeading number="2" id="screencasts-title">
           Servicios
         </SectionHeading>
-        <h2 className="mt-8 font-display text-4xl font-light tracking-tight text-[#325c89]">
+        <h2 className="mt-8 font-display text-4xl font-bold tracking-tight text-[#325c89]">
           Nuestros Servicios
         </h2>
         <p className="mt-4 text-lg tracking-tight text-slate-700">
