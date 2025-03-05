@@ -5,8 +5,8 @@ import { CheckIcon } from '@/components/CheckIcon'
 import { Container } from '@/components/Container'
 import { GridPattern } from '@/components/GridPattern'
 import { SectionHeading } from '@/components/SectionHeading'
-import image5 from '@/images/selection/image5.jpeg'
-import image3 from '@/images/selection/image3.jpeg'
+import benefits from '@/images/colombia-limpia/benefits.png'
+import clean_logo from '@/images/colombia-limpia/clean_logo.png'
 import Image from "next/image";
 
 function Plan({
@@ -114,46 +114,58 @@ export function Pricing() {
       aria-labelledby="pricing-title"
       className="scroll-mt-14 pt-16 pb-8 sm:scroll-mt-32 sm:pt-20 sm:pb-10 lg:pt-24 lg:pb-16"
     >
-      <Container>
+      <Container size="lg">
         <SectionHeading number="4" id="pricing-title">
           Beneficios
         </SectionHeading>
-        <h2 className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
-          Beneficios del Proceso de Selección
-        </h2>
-        <p className="mt-4 max-w-xl text-lg tracking-tight text-slate-600">
-          En Colombia Limpia SAS, garantizamos la idoneidad y motivación del
-          personal mediante un riguroso proceso de selección que incluye:
-        </p>
-        <p className="mt-4 max-w-xl text-lg tracking-tight text-slate-600">
-          • Reclutamiento: Identificamos y seleccionamos personal apto para
-          cumplir con los perfiles requeridos por nuestros clientes.
-        </p>
-        <p className="mt-4 max-w-xl text-lg tracking-tight text-slate-600">
-          • Selección Integral: Definimos candidatos idóneos a través de
-          verificaciones exhaustivas, incluyendo exámenes médicos, visitas
-          domiciliarias, entrevistas y pruebas psicológicas.
-        </p>
-        <p className="mt-4 max-w-xl text-lg tracking-tight text-slate-600">
-          • Contratación Segura: Legalizamos la relación laboral, asegurando la afiliación a entidades de
-          Seguridad Social y la firma del contrato de trabajo.
-        </p>
-      </Container>
-      <div className="mx-auto mt-16 max-w-3xl lg:px-6">
-        <div className="grid grid-cols-1 gap-4 bg-slate-50 sm:px-6 sm:pb-16 md:rounded-6xl md:px-8 md:pt-16 lg:p-20">
-          {/*<Image*/}
-          {/*    className="w-full h-60 object-contain rounded-3xl"*/}
-          {/*    src={image3}*/}
-          {/*    alt=""*/}
-          {/*/>*/}
+
+        {/* Título + Imagen */}
+        <div className="mt-8 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+          <h2 className="font-display text-4xl leading-tight font-extrabold tracking-tight text-[#325c89] lg:max-w-[35%]">
+            Beneficios del <br/>
+            Proceso de Selección
+          </h2>
           <Image
-              className="w-full h-60 object-contain rounded-3xl"
-              src={image5}
-              alt=""
+              src={benefits}
+              alt="Imagen título"
+              className="w-full max-w-[700px] object-contain shadow-xl"
           />
         </div>
-      </div>
 
+        {/* Textos + Imagen */}
+        <div className="mt-10 flex flex-col gap-6 lg:flex-row lg:items-end">
+          {/* Textos */}
+          <div className="flex-1 text-lg tracking-tight text-gray-900 lg:max-w-6xl">
+            <p className="mt-4">
+              En Colombia Limpia SAS, garantizamos la idoneidad y motivación del
+              personal mediante un riguroso proceso de selección que incluye:
+            </p>
+            <p className="mt-4">
+              • <strong>Reclutamiento:</strong> Identificamos y seleccionamos
+              personal apto para cumplir con los perfiles requeridos por
+              nuestros clientes.
+            </p>
+            <p className="mt-4">
+              • <strong>Selección Integral:</strong> Definimos candidatos
+              idóneos a través de verificaciones exhaustivas, incluyendo
+              exámenes médicos, visitas domiciliarias, entrevistas y pruebas
+              psicológicas.
+            </p>
+            <p className="mt-4">
+              • <strong>Contratación Segura:</strong> Legalizamos la relación
+              laboral, asegurando la afiliación a entidades de Seguridad Social
+              y la firma del contrato de trabajo.
+            </p>
+          </div>
+
+          {/* Imagen lateral */}
+          <Image
+              src={clean_logo}
+              alt="Imagen textos"
+              className="w-full max-w-[250px] object-contain lg:ml-10 shadow-lg hidden lg:block"
+          />
+        </div>
+      </Container>
     </section>
   )
 }
