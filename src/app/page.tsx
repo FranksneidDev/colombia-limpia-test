@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Introduction />
+      {/*<Introduction />*/}
       <NavBar />
       <TableOfContents />
       {/*<Testimonial*/}
