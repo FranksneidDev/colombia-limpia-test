@@ -14,6 +14,10 @@ export const metadata: Metadata = {
   title: 'Colombia Limpia - Soluciones S.A.S.',
   description:
     'Soluciones S.A.S.',
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+  },
 }
 
 export default function RootLayout({
@@ -39,7 +43,6 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,500,700&display=swap"
         />
-        <link rel="shortcut icon" href="/favicon.ico" />
       </head>
       <body className="flex min-h-full flex-col">{children}</body>
     </html>
