@@ -79,7 +79,12 @@ export function FreeChapters() {
                         ))}
                       </div>
                   ) : (
-                      <span className="text-base tracking-tight text-blue-200">{item.email}</span>
+                      <a
+                          href={`mailto:${item.email}`}
+                          className="text-base tracking-tight text-blue-200 hover:underline"
+                      >
+                        {item.email}
+                      </a>
                   )}
                 </div>
             ))}
